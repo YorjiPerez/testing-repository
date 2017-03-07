@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+        <title>Example</title>
+
+        <style type="text/css">
+            body {
+                color: #222;
+                font-size: 16px;
+                font-family: "Arial", Arial,Helvetica,sans-serif;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            section {
+                text-align: center;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .row {
+                max-width: 500px;
+                width: auto;
+                margin: 40px auto 10px;
+
+            }
+
+            .img-responsive {
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .wrapper-text {
+                background-color: #f1f1f1;
+                border: 1px solid #e1e1e1;
+                margin: auto;
+                padding: 30px;
+                max-width: 430px;
+                width: 100%;
+            }
+
+            h1 {
+                color: #444;
+                font-size: 40px;
+                margin: 10px 0 20px;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+            }
+
+            #number {
+                font-size: 80px;
+                color: #434343;
+                margin: 30px auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <img class="img-responsive" src="http://placehold.it/500x500.jpg" alt="name">
+                </div>
+                <div class="wrapper-text">
+                    <h1>Webapps</h1>
+                    <p>a été redirigé au domaine: <strong>htts://example.com</strong></p>
+                    <p>was redirected to the domain: <strong>htts://example.com</strong></p>
+                </div>
+                <div id="number"></div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            var n = 5;
+            var l = document.getElementById("number");
+            window.setInterval(function () {
+                l.innerHTML = n;
+                n--;
+
+                if (n === 0)
+                    window.location.href = "htts://example.com";
+
+            }, 1000);
+        </script>
+
+    </body>
+</html>
